@@ -1,0 +1,92 @@
+.dateAxis-text {
+	font-size:12px;
+	font-family:verdana;
+	fill:black;
+}
+.dateAxis-grid {
+	stroke:#ccc;
+}
+.yAxis-text {
+	font-size:12px;
+	font-family:verdana;
+	fill:black;
+}
+.yAxis-grid {
+	stroke:#ccc;
+}
+.axisVolume-text {
+	font-size:9px;
+	font-family:verdana;
+	fill:black;
+}
+.axisVolume-grid {
+	stroke:#ccc;
+}
+.axisScore-text {
+	font-size:9px;
+	font-family:verdana;
+	fill:black;
+}
+.axisScore-grid {
+	stroke:#ccc;
+}
+.score-line {
+	stroke:gray;
+}
+.share-line {
+	stroke:black;
+	fill:none;
+}
+.volume-line {
+	stroke:gray;
+}
+.volume-red {
+	stroke:red;
+}
+.volume-green {
+	stroke:green;
+}
+.sma-line {
+	stroke:#2299D4;
+	fill:none;
+}
+.bollingerband-band {
+	stroke:#4F9C9B;
+	stroke-opacity: 0.4;
+	fill:#D8F8F8;
+	fill-opacity: 0.4;
+}
+.ichimoku-band-1 {
+	stroke:gray;
+	stroke-opacity: 0.2;
+	fill:url(#ichimoku-band-1);
+	fill-opacity: 0.2;
+}
+.ichimoku-band-2 {
+	stroke:gray;
+	stroke-opacity: 0.2;
+	fill:url(#ichimoku-band-2);
+	fill-opacity: 0.2;
+}
+.ichimoku-band-4 {
+	stroke:gray;
+	stroke-opacity: 0.2;
+}
+.crossVLabel-text {
+	font-size:9px;
+	font-family:verdana;
+	fill:black;
+}
+.crossVLabel-rect {
+	fill:white;
+	stroke:gray;
+}
+.chartlabel-text {
+	font-size:16px;
+	font-family:verdana;
+	fill:black;
+}
+.chartlabel-rect {
+	fill:white;
+	stroke:gray;
+}

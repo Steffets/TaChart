@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de" 
+<head>
+	<link rel="stylesheet" href="tachart.css" />
+	<style>
+	#main {
+		width:800px;
+		height:600px;
+	}
+	.ichimoku-band-1 {
+		stroke:gray;
+		stroke-opacity: 0.2;
+		fill:url(#ichimoku-band-1);
+		fill-opacity: 0.2;
+	}
+	.ichimoku-band-2 {
+		stroke:gray;
+		stroke-opacity: 0.2;
+		fill:url(#ichimoku-band-2);
+		fill-opacity: 0.2;
+	}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="localData.js"></script>
+	<script src="calculation.js"></script>
+	<script src="chart_core.js"></script>
+	<script src="tachartv2.js"></script>
+	<script>
+		var taChart;
+		$(function(){
+			taChart = new TaChart('main',{symbol:'^GDAXI', timeUnit:'minute'});
+			taChart.init();
+		});
+		//setInterval(function(){ taChart.update(); }, 1000);
+	 </script>
+</head>
+<body>
+	<div id="svg">
+		<svg id="main" stroke="none" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<linearGradient id="ichimoku-band-1"
+								x1="0%" y1="0%"
+								x2="0%" y2="100%"
+								spreadMethod="pad">
+				  <stop offset="0%"   stop-color="#FAF6A7" stop-opacity="1"/>
+				  <stop offset="100%" stop-color="#F2E817" stop-opacity="1"/>
+				</linearGradient>
+				<linearGradient id="ichimoku-band-2"
+								x1="0%" y1="0%"
+								x2="0%" y2="100%"
+								spreadMethod="pad">
+				  <stop offset="0%"   stop-color="#C5D7FA" stop-opacity="1"/>
+				  <stop offset="100%" stop-color="#4B84EE" stop-opacity="1"/>
+				</linearGradient>
+			</defs>
+			<g stroke="none" fill="none" class="init">
+				<text id="dummy-text" x="10" y="20" style="fill:none;"></text>
+			</g>
+		</svg>
+	</div>
+	
+</body>
+</html>
